@@ -16,7 +16,7 @@ The workspace is modeled as a two-dimensional grid map containing static obstacl
 
 There are m homogeneous mobile robots, denoted by
 
-R = {R_1, R_2, ..., R_m}.
+R = {$R_1, R_2, ..., R_m$}.
 
 Each robot has an initial position and moves one grid per time step. At each time step, a robot can move up, down, left, right, or wait.
 
@@ -24,7 +24,7 @@ Each robot has an initial position and moves one grid per time step. At each tim
 
 There are n independent tasks,
 
-T = {T_1, T_2, ..., T_n}.
+T = {$T_1, T_2, ..., T_n$}.
 
 Each task corresponds to a unique target location, and every robot is assigned exactly one task.
 
@@ -35,8 +35,8 @@ Two robots cannot occupy the same grid cell at the same time, and they cannot pa
 ## 3. Problem Inputs and Outputs
 
 ### Inputs
-* Robot set R=\{R_1,R_2,\dots,R_m\}
-* Task set T=\{T_1,T_2,\dots,T_n\}
+* Robot set R=$\{R_1,R_2,\dots,R_m\}$
+* Task set T=$\{T_1,T_2,\dots,T_n\}$
 * Environment map G
   
 ### Outputs
@@ -51,11 +51,11 @@ Two robots cannot occupy the same grid cell at the same time, and they cannot pa
 
 在多机器人调度中，总路径代价(Sum of Costs)能够反映整体运输效率，而整体完成时间(Makespan)能够反映系统完成全部任务所需的最长时间。为了便于算法设计与性能比较，本项目首先采用SOC作为主要优化目标，并将Makespan作为辅助评价指标。
 ## 5. Decision Variables
-x_{ij}表示机器人R_i是否执行任务T_j。
+$x_{ij}$表示机器人$R_i$是否执行任务$T_j$。
 
-如果：机器人R_i执行任务T_j,那么：x_{ij}=1
+如果：机器人$R_i$执行任务$T_j$,那么：$x_{ij}=1$
 
-否则：x_{ij}=0
+否则：$x_{ij}=0$
 ## 6. Assignment Constraints
 ① 每个机器人只能执行一个任务。
 
